@@ -1,0 +1,6 @@
+/backend/.env
+/backend/.tour-guide-venv
+/frontend/node_modules
+__pycache__
+*.pyc
+*.pyo
