@@ -1,40 +1,62 @@
-# TOur GUide Q&A Application
+# Tour Guide Q/A Application
 
-A modern web application that guides users on local sites the can tour using DeepSeek's LLM. Built with Next.js (frontend) and FastAPI (backend).
+A modern web application that uses DeepSeek's LLM to help users discover destinations and answer travel-related queries.  
+Built with Next.js (frontend) and FastAPI (backend).
 
 ## Setup Instructions
 
 ### Prerequisites
 - Node.js (v18 or higher)
 - Python (v3.10 or higher)
-- DeepSeek API key (free tier)
+- DeepSeek API key
 
 ### Backend Setup
 1. Navigate to `backend/`
-2. Create a virtual environment:
 
+```bash
+    cd backend
+```
+
+2. Create and activate virtual environment:
+
+```bash
    python -m venv venv
    source venv/bin/activate  # If on Windows: venv\Scripts\activate
-
+```
 3. Install dependencies
-    pip install -r requirements.txt
 
-4. Copy .env.example to /backend/.env and add your DeepSeek API key:
-    DEEPSEEK_API_KEY=your_deepseek_api_key_here
+```bash
+    pip install -r requirements.txt
+```
+
+4. Setup .env  
+ Copy .env.example to backend/.env  
+ Set your DeepSeek API key  
 
 5. Run the backeed
-    uvicorn app.main:app --reload
 
+```bash
+    uvicorn app.main:app --reload
+```
 
 ### Frontend Setup
 1. Navigate to frontend/
 
+```bash
+    cd frontend/
+```
+
 2. Install dependencies
+
+```bash
     npm install
+```
 
 3. Run the frontend
-    npm run dev
 
+```bash
+    npm run dev
+```
 ### Access application
     Frontend: http://localhost:3000
     Backend API: http://localhost:8000
